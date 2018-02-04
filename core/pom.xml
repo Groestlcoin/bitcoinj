@@ -20,14 +20,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.bitcoinj</groupId>
-        <artifactId>bitcoinj-parent</artifactId>
+        <groupId>org.groestlcoinj</groupId>
+        <artifactId>groestlcoinj-parent</artifactId>
         <version>0.15-Segwit-Samourai-001</version>
     </parent>
 
-    <artifactId>bitcoinj-core</artifactId>
+    <artifactId>groestlcoinj-core</artifactId>
 
-    <name>bitcoinj</name>
+    <name>groestlcoinj</name>
     <description>A Java Bitcoin library</description>
 
     <packaging>jar</packaging>
@@ -45,8 +45,8 @@
     <!-- Dummy block to make Maven Central happy: authors list is in AUTHORS -->
     <developers>
         <developer>
-            <name>The bitcoinj team</name>
-            <email>bitcoinj@googlegroups.com</email>
+            <name>The groestlcoinj team</name>
+            <email>hashengineeringsolutions@gmail.com</email>
         </developer>
     </developers>
 
