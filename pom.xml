@@ -19,8 +19,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.bitcoinj</groupId>
-  <artifactId>bitcoinj-parent</artifactId>
+  <groupId>org.groestlcoinj</groupId>
+  <artifactId>groestlcoinj-parent</artifactId>
   <version>0.15-Segwit-Samourai-001</version>
   <packaging>pom</packaging>
 
@@ -35,13 +35,13 @@
   </parent>
 
   <scm>
-    <connection>scm:git:https://github.com/bitcoinj/bitcoinj</connection>
-    <developerConnection>scm:git:https://github.com/bitcoinj/bitcoinj</developerConnection>
-    <url>scm:git:https://github.com/bitcoinj/bitcoinj</url>
+    <connection>scm:git:https://github.com/Groestlcoin/groestlcoinj-samourai</connection>
+    <developerConnection>scm:git:https://github.com/Groestlcoin/groestlcoinj-samourai</developerConnection>
+    <url>scm:git:https://github.com/Groestlcoin/groestlcoinj-samourai</url>
   </scm>
 
-  <name>bitcoinj Parent</name>
-  <description>Provides the common configuration for the BitCoinJ modules</description>
+  <name>groestlcoinj Parent</name>
+  <description>Provides the common configuration for the GroestlcoinJ modules</description>
   <url>http://www.bitcoinj.org/</url>
 
   <licenses>
@@ -55,7 +55,7 @@
 
   <issueManagement>
     <system>GitHub</system>
-    <url>https://github.com/bitcoinj/bitcoinj/issues</url>
+    <url>https://github.com/bitcoinj/groestlcoinj/issues</url>
   </issueManagement>
 
   <mailingLists>
