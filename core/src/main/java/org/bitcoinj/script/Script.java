@@ -18,6 +18,7 @@
 
 package org.bitcoinj.script;
 
+import com.hashengineering.crypto.Groestl;
 import org.bitcoinj.core.*;
 import org.bitcoinj.crypto.TransactionSignature;
 
@@ -1389,7 +1390,7 @@ public class Script {
                 case OP_HASH256:
                     if (stack.size() < 1)
                         throw new ScriptException("Attempted OP_SHA256 on an empty stack");
-                    stack.add(Sha256Hash.hashTwice(stack.pollLast()));
+                    stack.add(Groestl.digest(stack.pollLast()));
                     break;
                 case OP_CODESEPARATOR:
                     lastCodeSepLocation = chunk.getStartLocationInProgram() + 1;

@@ -20,6 +20,7 @@ package org.bitcoinj.core;
 import com.google.common.annotations.*;
 import com.google.common.base.*;
 import com.google.common.collect.*;
+import com.hashengineering.crypto.Groestl;
 import org.bitcoinj.script.*;
 import org.slf4j.*;
 
@@ -81,7 +82,7 @@ public class Block extends Message {
     /** Height of the first block */
     public static final int BLOCK_HEIGHT_GENESIS = 0;
 
-    public static final long BLOCK_VERSION_GENESIS = 1;
+    public static final long BLOCK_VERSION_GENESIS = 112;
     /** Block version introduced in BIP 34: Height in coinbase */
     public static final long BLOCK_VERSION_BIP34 = 2;
     /** Block version introduced in BIP 66: Strict DER signatures */
@@ -406,7 +407,7 @@ public class Block extends Message {
         try {
             ByteArrayOutputStream bos = new UnsafeByteArrayOutputStream(HEADER_SIZE);
             writeHeader(bos);
-            return Sha256Hash.wrapReversed(Sha256Hash.hashTwice(bos.toByteArray()));
+            return Sha256Hash.wrapReversed(Groestl.digest(bos.toByteArray()));
         } catch (IOException e) {
             throw new RuntimeException(e); // Cannot happen.
         }
