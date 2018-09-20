@@ -780,6 +780,8 @@ public class Block extends Message {
         return version;
     }
 
+    public void setVersion(long version) { this.version = version; }
+
     /**
      * Returns the hash of the previous block in the chain, as defined by the block header.
      */
