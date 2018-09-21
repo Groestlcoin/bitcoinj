@@ -21,7 +21,7 @@
 
   <groupId>org.groestlcoinj</groupId>
   <artifactId>groestlcoinj-parent</artifactId>
-  <version>0.15-Segwit-Samourai-003</version>
+  <version>0.15-Segwit-Samourai-004</version>
   <packaging>pom</packaging>
 
   <modules>

@@ -22,7 +22,7 @@
     <parent>
         <groupId>org.groestlcoinj</groupId>
         <artifactId>groestlcoinj-parent</artifactId>
-        <version>0.15-Segwit-Samourai-003</version>
+        <version>0.15-Segwit-Samourai-004</version>
     </parent>
 
     <artifactId>groestlcoinj-core</artifactId>
@@ -432,5 +432,4 @@
             <version>2.7.5</version>
         </dependency>
     </dependencies>
-
 </project>
